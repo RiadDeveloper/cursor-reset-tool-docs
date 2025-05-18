@@ -299,7 +299,13 @@ export default function Home() {
               {resolvedTheme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
               <span className="sr-only">Toggle theme</span>
             </Button>
-            <Button variant="outline" size="sm" className="gap-1 hidden sm:flex">
+            <Button
+              variant="outline"
+              size="sm"
+              className="gap-1 hidden sm:flex"
+              onClick={() => window.open('https://github.com/RiadDeveloper/Cursor-Machine-ID-Reset-Tool', '_blank')}
+              aria-label="View on GitHub"
+            >
               <Github size={16} />
               <span>GitHub</span>
             </Button>
