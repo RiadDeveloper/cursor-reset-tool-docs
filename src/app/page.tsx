@@ -819,7 +819,14 @@ powershell -ExecutionPolicy Bypass -File .\reset_cursor_windows_by_Riad_develope
                 <p className="text-muted-foreground mb-4">
                   Check our troubleshooting guide or reach out to the community forums for assistance.
                 </p>
-                <Button variant="outline" size="sm">Visit Support Forum</Button>
+                <Button 
+                  variant="outline" 
+                  size="sm"
+                  onClick={() => window.open('https://github.com/RiadDeveloper/Cursor-Machine-ID-Reset-Tool/issues', '_blank')}
+                  aria-label="Visit GitHub Issues for support"
+                >
+                  Visit Support Forum
+                </Button>
               </motion.div>
             </div>
           </SectionWithInView>
