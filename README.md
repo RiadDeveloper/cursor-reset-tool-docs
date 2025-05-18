@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cursor Reset Tool v1.0.0
 
-## Getting Started
+A modern documentation website for the [Cursor Reset Tool](https://github.com/RiadDeveloper/Cursor-Machine-ID-Reset-Tool) that provides comprehensive instructions for resetting Cursor IDE machine identifiers.
 
-First, run the development server:
+## ⚠️ Note
 
+This documentation website is for the Cursor Reset Tool which is only available for Windows users.
+
+## 📝 Description
+
+This repository contains the documentation website for the Cursor Reset Tool - a PowerShell script that helps reset your Cursor installation without running any external applications. The website provides a modern, responsive interface for accessing the tool's documentation.
+
+## 🚀 Features
+
+- 📱 Responsive design for desktop and mobile
+- 🌓 Dark and light mode support
+- 🎨 Modern UI with smooth animations
+- 📖 Comprehensive documentation sections:
+  - Installation instructions
+  - Prerequisites
+  - Step-by-step usage guide
+  - Important notes and warnings
+  - Backup information
+  - License and terms
+- 🔍 Easy navigation with section links
+- ⚡ Fast and optimized performance
+
+## 💻 Prerequisites
+
+Before running the documentation website locally:
+- [Node.js](https://nodejs.org/) (version 16.x or higher)
+- [Bun](https://bun.sh/) (recommended) or npm
+
+## 📋 Getting Started
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/RiadDeveloper/cursor-reset-tool-docs.git
+cd cursor-reset-tool-docs
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+# Using Bun (recommended)
+bun install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Using npm
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Start the development server:
+```bash
+# Using Bun (recommended)
+bun dev
 
-## Learn More
+# Using npm
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Built With
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
+- [Framer Motion](https://www.framer.com/motion/) - Animation library
+- [Lucide Icons](https://lucide.dev/) - Icon library
+- [Shadcn/ui](https://ui.shadcn.com/) - UI components
 
-## Deploy on Vercel
+## 📂 Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+├── app/                # Next.js app directory
+│   ├── layout.tsx     # Root layout component
+│   └── page.tsx       # Main documentation page
+├── components/        # Reusable UI components
+└── styles/           # Global styles
+public/              # Static assets
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔄 Development
+
+The page will auto-update as you edit the files. For production:
+
+```bash
+# Using Bun
+bun run build
+bun start
+
+# Using npm
+npm run build
+npm start
+```
+
+## 🚀 Deployment
+
+This project is configured for deployment on Netlify. The `netlify.toml` file includes the necessary build settings.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/RiadDeveloper/cursor-reset-tool-docs)
+
+You can also deploy on Vercel or any other platform that supports Next.js.
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👤 Author
+
+Created by Riad Developer
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 💬 Support
+
+If you encounter any issues or have questions:
+- Ensure you've followed all steps correctly
+- [Open an issue](https://github.com/RiadDeveloper/cursor-reset-tool-docs/issues) on GitHub
+- Visit the [official repository](https://github.com/RiadDeveloper/Cursor-Machine-ID-Reset-Tool) for tool-specific issues
+
+## 🔗 Related Links
+
+- [Cursor Reset Tool Repository](https://github.com/RiadDeveloper/Cursor-Machine-ID-Reset-Tool) - Official tool repository
+- [Cursor IDE](https://cursor.sh/) - Official Cursor IDE website
+- [Documentation Site](https://cursor-reset-tool.netlify.app) - Live documentation website
