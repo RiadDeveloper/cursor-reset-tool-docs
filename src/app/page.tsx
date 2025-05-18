@@ -575,6 +575,18 @@ export default function Home() {
                 </h3>
 
                 <div className="ml-11">
+                  <div className="mb-4">
+                    <Button
+                      variant="default"
+                      size="sm"
+                      className="gap-2"
+                      onClick={() => window.open('https://github.com/RiadDeveloper/Cursor-Machine-ID-Reset-Tool/releases/download/v1.0.0/reset_cursor_windows_by_Riad_developer.ps1', '_blank')}
+                    >
+                      <Download size={16} />
+                      <span>Download Reset Script</span>
+                    </Button>
+                  </div>
+
                   <CodeBlock
                     code="cd $env:USERPROFILE\Downloads
 powershell -ExecutionPolicy Bypass -File .\reset_cursor_windows_by_Riad_developer.ps1"
@@ -838,27 +850,71 @@ powershell -ExecutionPolicy Bypass -File .\reset_cursor_windows_by_Riad_develope
               icon={<FileText />}
               title="License"
             />
-            <div className="section-content">
+            <div className="section-content space-y-6">
               <div className="gradient-border">
-                <div className="p-5 rounded-md">
-                  <h3 className="text-lg font-medium mb-3">Terms of Use</h3>
-                  <p className="mb-4">This tool is provided as-is, without any warranty. Use at your own risk.</p>
-                  <div className="space-y-2 text-sm text-muted-foreground">
-                    <div className="flex items-start gap-2">
-                      <Check size={16} className="text-primary mt-1 flex-shrink-0" />
-                      <p>You may use this tool for personal and commercial purposes</p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <Check size={16} className="text-primary mt-1 flex-shrink-0" />
-                      <p>No warranty is provided</p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <Check size={16} className="text-primary mt-1 flex-shrink-0" />
-                      <p>The developer is not responsible for any damage caused by using this tool</p>
+                <div className="p-6 rounded-md space-y-6">
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3">MIT License</h3>
+                    <p className="text-muted-foreground">Copyright (c) 2025 Riad Developer</p>
+                  </div>
+
+                  <div className="space-y-4 text-sm">
+                    <p>
+                      Permission is hereby granted, free of charge, to any person obtaining a copy
+                      of this software and associated documentation files (the "Software"), to deal
+                      in the Software without restriction, including without limitation the rights
+                      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                      copies of the Software, and to permit persons to whom the Software is
+                      furnished to do so, subject to the following conditions:
+                    </p>
+
+                    <p>
+                      The above copyright notice and this permission notice shall be included in all
+                      copies or substantial portions of the Software.
+                    </p>
+
+                    <p className="text-muted-foreground">
+                      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+                      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+                      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+                      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+                      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+                      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+                      SOFTWARE.
+                    </p>
+                  </div>
+
+                  <div className="border-t pt-4 space-y-2">
+                    <h4 className="font-medium mb-2">Key Points:</h4>
+                    <div className="space-y-2">
+                      <div className="flex items-start gap-2">
+                        <Check size={16} className="text-primary mt-1 flex-shrink-0" />
+                        <p>Free to use for both personal and commercial purposes</p>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Check size={16} className="text-primary mt-1 flex-shrink-0" />
+                        <p>Modify, distribute, and sublicense as needed</p>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Check size={16} className="text-primary mt-1 flex-shrink-0" />
+                        <p>Include the original license and copyright notice</p>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Check size={16} className="text-primary mt-1 flex-shrink-0" />
+                        <p>No warranty provided - use at your own risk</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <Alert variant="default" className="border-2 border-primary/30">
+                <AlertTriangle className="h-5 w-5" />
+                <AlertTitle className="font-semibold">Disclaimer</AlertTitle>
+                <AlertDescription>
+                  This tool is provided as-is. The developer is not responsible for any damage or issues that may arise from using this tool. Always ensure you have backups before making system modifications.
+                </AlertDescription>
+              </Alert>
             </div>
           </SectionWithInView>
 
