@@ -25,7 +25,7 @@ import {
   Github,
   Moon,
   Sun,
-  Home
+  Home as HomeIcon
 } from "lucide-react";
 import {
   Accordion,
@@ -882,7 +882,7 @@ powershell -ExecutionPolicy Bypass -File .\reset_cursor_windows_by_Riad_develope
             </div>
             <div className="flex gap-3">
               <Button variant="ghost" size="icon" onClick={() => scrollToTop()}>
-                <Home size={18} />
+                <HomeIcon size={18} className="text-primary" />
               </Button>
               <Button
                 variant="ghost"
